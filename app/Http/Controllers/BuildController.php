@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Build;
+use App\Models\Image;
 use Illuminate\Http\Request;
 
 class BuildController extends Controller
@@ -23,11 +24,20 @@ class BuildController extends Controller
 
     public function store(Request $request)
     {
+        // $filename = time() . '.' . $request->extension();
+        // $path = $request->file('avatar')->storeAs(
+        //     'avatars',
+        //     $filename,
+        //     'public'
+        // );
         Build::create([
             'title'=>$request->title,
             'Descprition'=>$request->Descprition,
             'auteur'=>$request->auteur
         ]);
+
+        // $image = new Image();
+        // $image->path = $path;
 
         dd('Build cree!');
     }

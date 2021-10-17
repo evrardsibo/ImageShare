@@ -2,7 +2,7 @@
             @extends('layouts.app')
             @section('contenu')
                 <h1>Creer Image</h1>
-            <form action="{{route('build.store')}}" method="post">
+            <form action="{{route('build.store')}}" method="post" enctype="multipart/form-data">
 
             @csrf
 

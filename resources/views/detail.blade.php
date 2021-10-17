@@ -6,4 +6,5 @@
         <h4>{{$build->title}}</h4>
         <h4>{{$build->Descprition}}</h4>
         <h4>{{$build->auteur}}</h4>
+        <span>{{$build->image->avatar}}</span>
     @endsection
