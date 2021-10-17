@@ -15,10 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[BuildController::class,'index'])->name('home');//route name
-Route::post('/build',[BuildController::class,'build'])->name('build');
-Route::get('/build',[BuildController::class,'build'])->name('build');
-Route::get('/detail/{$id}',[BuildController::class,'detail'])->whereNumber('id');
-Route::get('/details',[BuildController::class,'detail1']);
+Route::get('/build',[BuildController::class,'create'])->name('build.create');
+Route::post('/build',[BuildController::class,'store'])->name('build.store');
+// Route::get('/build',[BuildController::class,'build'])->name('build');
+Route::get('/detail/{id}',[BuildController::class,'detail'])->name('detail.detail');
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

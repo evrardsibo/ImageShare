@@ -16,19 +16,31 @@ class BuildController extends Controller
             'builds' => $builds
         ]);
     }
-
-    public function build()
+    public function create()
     {
         return view('build');
     }
 
-    public function detail()
+    public function store(Request $request)
     {
-        return view('detail');
+        Build::create([
+            'title'=>$request->title,
+            'Descprition'=>$request->Descprition,
+            'auteur'=>$request->auteur
+        ]);
+
+        dd('Build cree!');
+    }
+    
+
+    public function detail($id)
+    {   
+        $build = Build::findOrfail($id);
+        // dd($build);
+        return view('detail',[
+            'build' => $build
+        ]);
     }
 
-    public function detail1()
-    {
-        return view('detail1');
-    }
+    
 }

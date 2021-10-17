@@ -3,7 +3,7 @@
 
             <li><a href="#">Register</a></li>
             
-            <!-- <li><a href="#">Contact</a></li> -->
+            <li><a href="{{route('build.create')}}">Contact</a></li> 
 
             
         </ul>
