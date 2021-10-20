@@ -24,7 +24,6 @@ class BuildController extends Controller
 
     public function store(Request $request)
     {
-<<<<<<< HEAD
         $request->validate([
             'title'=> ['required','max:12','min:5'],
             'Descprition'=>['required'],
@@ -38,21 +37,11 @@ class BuildController extends Controller
             'public'
         );
         $build = Build::create([
-=======
-        // $filename = time() . '.' . $request->extension();
-        // $path = $request->file('avatar')->storeAs(
-        //     'avatars',
-        //     $filename,
-        //     'public'
-        // );
-        Build::create([
->>>>>>> 9a100756cc26639f1318777b5e50ff5da6f93cb0
             'title'=>$request->title,
             'Descprition'=>$request->Descprition,
             'auteur'=>$request->auteur
         ]);
 
-<<<<<<< HEAD
         $image = new Image();
         $image->avatar = $path;
 
@@ -61,12 +50,6 @@ class BuildController extends Controller
         
 
         dd('Build crée!');
-=======
-        // $image = new Image();
-        // $image->path = $path;
-
-        dd('Build cree!');
->>>>>>> 9a100756cc26639f1318777b5e50ff5da6f93cb0
     }
     
 
