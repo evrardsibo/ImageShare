@@ -10,6 +10,7 @@
         <h4>{{$build->Descprition}}</h4>
         <h3>Auteur</h3>
         <h4>{{$build->auteur}}</h4>
+<<<<<<< HEAD
         
         <hr>
       
@@ -25,4 +26,7 @@
         </form>
         
         
+=======
+        <span>{{$build->image->avatar}}</span>
+>>>>>>> 9a100756cc26639f1318777b5e50ff5da6f93cb0
     @endsection

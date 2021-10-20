@@ -2,11 +2,14 @@
             @extends('layouts.app')
             @section('contenu')
                 <h1>Creer Image</h1>
+<<<<<<< HEAD
                 @if($errors->any())
                     @foreach($errors->all() as $error)
                     <h6 class="text-red-500">{{$error}}</h6>
                     @endforeach
                 @endif
+=======
+>>>>>>> 9a100756cc26639f1318777b5e50ff5da6f93cb0
             <form action="{{route('build.store')}}" method="post" enctype="multipart/form-data">
 
             @csrf
