@@ -2,7 +2,12 @@
             @extends('layouts.app')
             @section('contenu')
                 <h1>Creer Image</h1>
-            <form action="{{route('build.store')}}" method="post">
+                @if($errors->any())
+                    @foreach($errors->all() as $error)
+                    <h6 class="text-red-500">{{$error}}</h6>
+                    @endforeach
+                @endif
+            <form action="{{route('build.store')}}" method="post" enctype="multipart/form-data">
 
             @csrf
 

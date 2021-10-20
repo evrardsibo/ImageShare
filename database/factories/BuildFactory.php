@@ -24,7 +24,8 @@ class BuildFactory extends Factory
         return [
             'title' => $this->faker->word,
             'Descprition' => $this->faker->sentence,
-            'auteur' => $this->faker->name
+            'auteur' => $this->faker->name,
+            'avatar' > $this->faker->image
         ];
     }
 }

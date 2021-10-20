@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BuildController;
+use App\Http\Controllers\CommentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,9 +17,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[BuildController::class,'index'])->name('home');//route name
 Route::get('/build',[BuildController::class,'create'])->name('build.create');
-Route::post('/build',[BuildController::class,'store'])->name('build.store');
-// Route::get('/build',[BuildController::class,'build'])->name('build');
+Route::post('/build',[CommentController::class,'store'])->name('build.store');
 Route::get('/detail/{id}',[BuildController::class,'detail'])->name('detail.detail');
+Route::get('/user',[BuildController::class,'user'])->name('user');
+
 
 
 Route::get('/dashboard', function () {
