@@ -10,13 +10,14 @@
         <h4>{{$build->Descprition}}</h4>
         <h3>Auteur</h3>
         <h4>{{$build->auteur}}</h4>
-<<<<<<< HEAD
         
         <hr>
+
+       
       
         <form action="{{route('build.store')}}" method="post">
         @csrf
-            <input type="hidden" name="image_id" value="{{$build->image->id}}">
+            <input type="hidden" name="build_id" value="{{$build->id}}">
             <label for="">commentaire</label><br>
             <textarea name="commentaire" id="" cols="20" rows="10"></textarea>
             <button type="submit" class="bg-blue-600">Envoyer</button>
@@ -26,7 +27,4 @@
         </form>
         
         
-=======
-        <span>{{$build->image->avatar}}</span>
->>>>>>> 9a100756cc26639f1318777b5e50ff5da6f93cb0
     @endsection

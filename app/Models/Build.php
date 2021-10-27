@@ -12,12 +12,10 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Build extends Model
 {
     use HasFactory;
-    protected $fillable = ['title','Descprition','auteur','commentaire'];
+    protected $fillable = ['title','Descprition','auteur','user_id','image_id'];
 
     public function image()
     {
         return $this->hasOne(Image::class);
-    }
-
-   
+    }   
 }

@@ -25,7 +25,7 @@ class BuildController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'title'=> ['required','max:12','min:5'],
+            'title'=> ['required','max:20','min:5'],
             'Descprition'=>['required'],
             'auteur'=>['required']
         ]);
@@ -39,7 +39,10 @@ class BuildController extends Controller
         $build = Build::create([
             'title'=>$request->title,
             'Descprition'=>$request->Descprition,
-            'auteur'=>$request->auteur
+            'auteur'=>$request->auteur,
+            'user_id' =>$request->user->id,
+            'image_id'=>$request->image->id
+            
         ]);
 
         $image = new Image();

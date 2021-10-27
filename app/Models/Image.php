@@ -11,6 +11,6 @@ class Image extends Model
     use HasFactory;
     public function comments()
     {
-        return $this->hasMany(Comment::class);
+        return $this->hasMany(Build::class);
     }
 }
