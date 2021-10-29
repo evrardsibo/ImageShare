@@ -48,9 +48,7 @@ class BuildController extends Controller
         $image = new Image();
         $image->avatar = $path;
 
-        $build->image()->save($image);
-
-        
+        $build->image()->save($image);   
 
         dd('Build crée!');
     }
