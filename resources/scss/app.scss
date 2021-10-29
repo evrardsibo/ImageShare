@@ -41,16 +41,81 @@ h1 {
 }
 
 .container {
+    margin-top: 2%;
     display: flex;
     justify-content: space-evenly;
     .img {
         width: 500px;
         img {
             width: 100%;
+            border-radius: 15px;
         }
     }
     .info {
         display: flex;
         flex-direction: column;
+        margin-left: 15px;
+        font-size: 1em;
+        h3 {
+            color: #e73535;
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+        h4 {
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+        .titleCard {
+            margin-left: 0;
+            font-size: 2.2em;
+        }
+        .titleGroup {
+            display: flex;
+            align-items: center;
+            h4 {
+                margin-left: 10px;
+            }
+        }
+        .desGroup {
+            display: flex;
+            align-items: center;
+            h4 {
+                margin-left: 10px;
+            }
+        }
+        .autGroup {
+            display: flex;
+            align-items: center;
+            h4 {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 220px;
+    margin-left: 22%;
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    label {
+        font-size: 1.5em;
+        margin-bottom: -5px;
+    }
+    textarea {
+        border: none;
+        padding: 5px 300px 5px 5px;
+        border-radius: 15px;
+    }
+    button {
+        border-radius: 15px;
+        border: none;
+        padding: 2px 10px;
+        margin-top: 10px;
     }
 }

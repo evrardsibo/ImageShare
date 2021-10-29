@@ -37,6 +37,7 @@ h1 {
 }
 
 .container {
+  margin-top: 2%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -45,8 +46,72 @@ h1 {
 }
 .container .img img {
   width: 100%;
+  border-radius: 15px;
 }
 .container .info {
   display: flex;
   flex-direction: column;
+  margin-left: 15px;
+  font-size: 1em;
+}
+.container .info h3 {
+  color: #e73535;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.container .info h4 {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.container .info .titleCard {
+  margin-left: 0;
+  font-size: 2.2em;
+}
+.container .info .titleGroup {
+  display: flex;
+  align-items: center;
+}
+.container .info .titleGroup h4 {
+  margin-left: 10px;
+}
+.container .info .desGroup {
+  display: flex;
+  align-items: center;
+}
+.container .info .desGroup h4 {
+  margin-left: 10px;
+}
+.container .info .autGroup {
+  display: flex;
+  align-items: center;
+}
+.container .info .autGroup h4 {
+  margin-left: 10px;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 220px;
+  margin-left: 22%;
+}
+.formContainer form {
+  display: flex;
+  flex-direction: column;
+}
+.formContainer label {
+  font-size: 1.5em;
+  margin-bottom: -5px;
+}
+.formContainer textarea {
+  border: none;
+  padding: 5px 300px 5px 5px;
+  border-radius: 15px;
+}
+.formContainer button {
+  border-radius: 15px;
+  border: none;
+  padding: 2px 10px;
+  margin-top: 10px;
 }
